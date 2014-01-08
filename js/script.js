@@ -77,36 +77,41 @@ $(document).ready(function(){
 
 }); // document ready
 
-$('nav ul li a').on('click', function () {
-    var go = $(this).attr('href');
-    if (go == '#first') {
+$(function(){
+    $('nav ul li a').on('click', function () {
+        var go = $(this).attr('href');
+        if (go == '#first') {
             var getPosition = $('#first').offset().top;
             $('html,body').animate({ scrollTop: getPosition }, 'slow');
             return false;
-    }
-    else if (go == '#second') {
+        }
+        else if (go == '#second') {
             var getPosition = $('#second').offset().top - 60;
             $('html,body').animate({ scrollTop: getPosition }, 'slow');
             return false;
-    }
-    else if (go == '#third') {
+        }
+        else if (go == '#third') {
             var getPosition = $('#third').offset().top - 10;
             $('html,body').animate({ scrollTop: getPosition - 50 }, 'slow');
             return false;
-    }
-    else if (go == '#fourth') {
+        }
+        else if (go == '#fourth') {
             var getPosition = $('#fourth').offset().top - 60;
             $('html,body').animate({ scrollTop: getPosition }, 'slow');
             return false;
-    }
-    else if (go == '#theend') {
+        }
+        else if (go == '#theend') {
             var getPosition = $('#theend').offset().top -60;
             $('html,body').animate({ scrollTop: getPosition }, 'slow');
             return false;
-    }
-    else if (go == '#five') {
+        }
+        else if (go == '#five') {
             var getPosition = $('#five').offset().top -60;
             $('html,body').animate({ scrollTop: getPosition }, 'slow');
             return false;
-    }
+        }
+    });
 });
+
+
+

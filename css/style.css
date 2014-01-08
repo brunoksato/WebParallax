@@ -59,11 +59,65 @@ article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-h
 #third article p { width: 300px; margin-bottom: 25px; }
 
 /* HTML5 Video */
-#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.0em; color: #000; position: absolute; top: 0; }
 #fourth article p { width: 300px; margin: 50px 0; }
 #fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
 
 /* The End */
 #theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 
+
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: #6b6b6d;
+  background-color: rgba(0,0,0,0.75);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  z-index: 10;
+
+}
+
+nav{
+  width: 1000px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 10px;
+  list-style: none;
+}
+
+li a{
+  font-family: 'Quando', serif;
+  padding-left: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+li a:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+.logo{
+  width: 134px;
+  height: 40px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
